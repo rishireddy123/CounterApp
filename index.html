@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CounterApp</title>
+        <style>
+            body {
+                background: skyblue;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+            }
+            .container {
+                border: 1px solid black;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            button {
+                background: rgb(147, 192, 209);
+                border-radius: 10px;
+                color: white;
+                height: 30px;
+                width: 5rem;
+
+            } 
+            button:hover {
+                background-color: rgb(58, 108, 129);
+                cursor: pointer;
+            }
+            #count {
+                background-color: rgb(196, 222, 232);
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Counter App</h1>
+            <div>
+                <button id="increment">Increment</button>
+                <button id="decrement">Decrement</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div id="count">0</div>
+        </div>
+    </body>
+    <script src="./counterapp.js"></script>
+</html>
