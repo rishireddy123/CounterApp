@@ -1,28 +1,5 @@
-function createCounter() {
-    let count = 0;
-    return {
-        increment : function( ) {
-            count++;
-            return count;
-        },
-        decrement : function( ) {
-            count--;
-            return count;
-        },
-        reset : function( ) {
-            count=0;
-            return count;
-        }
-    };
-}
 
-function countHandler(counterMethod) {
-    return function() {
-        const finalCount = counterMethod();
-        localStorage.setItem("value",finalCount);
-        document.getElementById("count").innerText = finalCount;
-    }
-}
+import {createCounter, countHandler} from "./Export.js";
 
 let counter = createCounter();
 console.log(counter);
